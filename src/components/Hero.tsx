@@ -105,7 +105,7 @@ const Hero = () => {
 
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com/Cliftan', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/Cliftan', label: 'LinkedIn' },
+    { icon: FaLinkedin, href: 'https://linkedin.com/in/cliftan', label: 'LinkedIn' },
     { icon: FaEnvelope, href: 'mailto:cht14@sfu.ca', label: 'Email' },
   ]
 
