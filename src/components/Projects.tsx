@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaExternalLinkAlt, FaTimes } from "react-icons/fa";
+import { FaExternalLinkAlt, FaTimes, FaGithub } from "react-icons/fa";
 import Poster from "../assets/CMPT310_Poster.png";
 
 const Projects = () => {
@@ -16,7 +16,7 @@ const Projects = () => {
       tech: ["React", "Node.js", "Gemini API", "Ticketmaster API"],
       github:
         "https://github.com/CMPT-276-SPRING-2025/final-project-18-flowers",
-      demo: "https://cmpt-276-spring-2025.github.io/final-project-18-flowers/",
+      demo: "",
       image: "📅",
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
         "Reinforcement Learning",
         "A* Search",
       ],
-      github: "", // GitHub removed
+      github: "", // No GitHub button
       demo: "poster", // Use poster modal
       image: "🎮",
     },
@@ -104,6 +104,19 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex space-x-4">
+                  {/* Only show GitHub button if github link exists */}
+                  {project.github && project.github !== "" && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-gray-300 hover:text-white transition-colors"
+                    >
+                      <FaGithub /> <span>Code</span>
+                    </a>
+                  )}
+
+                  {/* Demo / Poster */}
                   {project.demo ? (
                     project.demo === "poster" ? (
                       <button
