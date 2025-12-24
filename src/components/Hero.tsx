@@ -8,9 +8,8 @@ const RotatingText = () => {
     { text: 'developer', emoji: '💻' },
     { text: 'designer', emoji: '🎨' },
     { text: 'gamer', emoji: '🎮' },
-    { text: 'maker', emoji: '🔧' },
-    { text: 'caffeine addict', emoji: '☕' },
-    { text: 'techie', emoji: '💻' },
+    { text: 'tech enthusiast', emoji: '🚀' },
+    { text: 'frontend developer', emoji: '💻' },
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
