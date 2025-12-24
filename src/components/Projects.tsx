@@ -71,8 +71,7 @@ const Projects = () => {
           <motion.div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-8" />
 
           <motion.p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Here are some of my recent projects showcasing my skills in
-            full-stack development
+            Here are some of my recent projects showcasing my skills
           </motion.p>
         </motion.div>
 
