@@ -56,7 +56,7 @@ const Projects = () => {
       title: "Finance Manager",
       description:
         "A personal finance manager app that helps users track their expenses and income",
-      tech: ["C++"],
+      tech: ["C++, SQLite"],
       github: "https://github.com/Cliftan/Finance-Manager",
       image: "💰", 
     }
