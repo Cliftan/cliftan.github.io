@@ -52,6 +52,14 @@ const Projects = () => {
       demo: "",
       image: "💻",
     },
+    {
+      title: "Finance Manager",
+      description:
+        "A personal finance manager app that helps users track their expenses and income",
+      tech: ["C++"],
+      github: "https://github.com/Cliftan/Finance-Manager",
+      image: "💰", 
+    }
   ];
 
   return (
